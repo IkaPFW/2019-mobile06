@@ -54,9 +54,9 @@ public class BrocaIndexFragment extends Fragment {
                         BrocaIndex bi = new BrocaIndex(gender, height);
                         mListener.onCalculateBrocaIndexClick(bi.getIndex());
                     }
-                }
-                else{
-                    Toast.makeText(getActivity(), "Please select gender and input your height", Toast.LENGTH_SHORT).show();
+                    else{
+                        Toast.makeText(getActivity(), "Please select gender and input your height", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
